@@ -10,6 +10,15 @@
   --white: #ffffff;
   --gray: #f5f5f5;
   --text-gray: #666666;
+  /* Adding more sophisticated gray shades for better UI */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
 }
 
 body {
@@ -80,7 +89,8 @@ nav {
   align-items: center;
   text-align: center;
   padding: 6rem 2rem 3rem;
-  background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+  /* Using gray gradient instead of pure black for more sophistication */
+  background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
   color: var(--white);
 }
 
@@ -94,7 +104,8 @@ nav {
 }
 
 .hero-logo {
-  height: 120px;
+  /* Increased logo size from 120px to 200px */
+  height: 200px;
   width: auto;
   object-fit: contain;
 }
@@ -139,7 +150,8 @@ nav {
 }
 
 .section.bg-gray {
-  background: var(--gray);
+  /* Using lighter gray for better contrast */
+  background: var(--gray-50);
   max-width: 100%;
 }
 
@@ -165,7 +177,8 @@ nav {
 .section-subtitle {
   text-align: center;
   font-size: 1.125rem;
-  color: var(--text-gray);
+  /* Using new gray-600 for better readability */
+  color: var(--gray-600);
   margin-bottom: 3rem;
 }
 
@@ -189,14 +202,16 @@ nav {
 
 .about-text p {
   margin-bottom: 1.5rem;
-  color: var(--text-gray);
+  /* Using gray-700 for better text hierarchy */
+  color: var(--gray-700);
   line-height: 1.8;
 }
 
 .about-image img {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /* Adding subtle gray shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Services Grid */
@@ -213,8 +228,11 @@ nav {
   background: var(--white);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Using lighter shadow with gray tones */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s, box-shadow 0.3s;
+  /* Adding subtle gray border */
+  border: 1px solid var(--gray-200);
 }
 
 .service-card:hover {
@@ -238,7 +256,8 @@ nav {
 }
 
 .service-card p {
-  color: var(--text-gray);
+  /* Using gray-700 for better readability */
+  color: var(--gray-700);
   line-height: 1.7;
 }
 
@@ -250,7 +269,8 @@ nav {
 }
 
 .compliance-card {
-  background: var(--gray);
+  /* Using gray-100 for subtle background */
+  background: var(--gray-100);
   padding: 2rem;
   border-radius: 8px;
   border-left: 4px solid var(--red);
@@ -263,7 +283,8 @@ nav {
 }
 
 .compliance-card p {
-  color: var(--text-gray);
+  /* Using gray-700 for better text contrast */
+  color: var(--gray-700);
 }
 
 /* Contact Section */
@@ -307,10 +328,12 @@ nav {
 
 /* Contact Form */
 .contact-form {
-  background: rgba(255, 255, 255, 0.05);
+  /* Using gray-900 with opacity for form background */
+  background: rgba(31, 41, 55, 0.5);
   padding: 2rem;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Using gray-700 for border */
+  border: 1px solid rgba(209, 213, 219, 0.2);
 }
 
 .form-group {
@@ -364,11 +387,12 @@ nav {
 
 /* Footer */
 footer {
-  background: var(--black);
+  /* Using gray-900 instead of pure black */
+  background: var(--gray-900);
   color: var(--white);
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--gray-800);
 }
 
 footer p {
@@ -403,7 +427,8 @@ footer p {
   }
 
   .hero-logo {
-    height: 80px;
+    /* Increased mobile logo size from 80px to 140px */
+    height: 140px;
   }
 
   .hero h1 {
