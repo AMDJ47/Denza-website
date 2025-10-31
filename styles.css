@@ -10,15 +10,6 @@
   --white: #ffffff;
   --gray: #f5f5f5;
   --text-gray: #666666;
-  /* Adding more sophisticated gray shades for better UI */
-  --gray-50: #f9fafb;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-300: #d1d5db;
-  --gray-600: #4b5563;
-  --gray-700: #374151;
-  --gray-800: #1f2937;
-  --gray-900: #111827;
 }
 
 body {
@@ -89,8 +80,8 @@ nav {
   align-items: center;
   text-align: center;
   padding: 6rem 2rem 3rem;
-  /* Using gray gradient instead of pure black for more sophistication */
-  background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
+  /* Reverted back to original black background */
+  background: var(--black);
   color: var(--white);
 }
 
@@ -104,8 +95,8 @@ nav {
 }
 
 .hero-logo {
-  /* Increased logo size from 120px to 200px */
-  height: 200px;
+  /* Increased logo size from 200px to 280px for more prominence */
+  height: 280px;
   width: auto;
   object-fit: contain;
 }
@@ -150,8 +141,8 @@ nav {
 }
 
 .section.bg-gray {
-  /* Using lighter gray for better contrast */
-  background: var(--gray-50);
+  /* Reverted to original gray background */
+  background: var(--gray);
   max-width: 100%;
 }
 
@@ -177,8 +168,8 @@ nav {
 .section-subtitle {
   text-align: center;
   font-size: 1.125rem;
-  /* Using new gray-600 for better readability */
-  color: var(--gray-600);
+  /* Reverted to original text-gray color */
+  color: var(--text-gray);
   margin-bottom: 3rem;
 }
 
@@ -202,16 +193,16 @@ nav {
 
 .about-text p {
   margin-bottom: 1.5rem;
-  /* Using gray-700 for better text hierarchy */
-  color: var(--gray-700);
+  /* Reverted to original text-gray color */
+  color: var(--text-gray);
   line-height: 1.8;
 }
 
 .about-image img {
   width: 100%;
   border-radius: 8px;
-  /* Adding subtle gray shadow */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  /* Reverted to original shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Services Grid */
@@ -228,11 +219,9 @@ nav {
   background: var(--white);
   padding: 2rem;
   border-radius: 8px;
-  /* Using lighter shadow with gray tones */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  /* Reverted to original shadow without border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  /* Adding subtle gray border */
-  border: 1px solid var(--gray-200);
 }
 
 .service-card:hover {
@@ -256,8 +245,8 @@ nav {
 }
 
 .service-card p {
-  /* Using gray-700 for better readability */
-  color: var(--gray-700);
+  /* Reverted to original text-gray color */
+  color: var(--text-gray);
   line-height: 1.7;
 }
 
@@ -269,8 +258,8 @@ nav {
 }
 
 .compliance-card {
-  /* Using gray-100 for subtle background */
-  background: var(--gray-100);
+  /* Reverted to original gray background */
+  background: var(--gray);
   padding: 2rem;
   border-radius: 8px;
   border-left: 4px solid var(--red);
@@ -283,8 +272,8 @@ nav {
 }
 
 .compliance-card p {
-  /* Using gray-700 for better text contrast */
-  color: var(--gray-700);
+  /* Reverted to original text-gray color */
+  color: var(--text-gray);
 }
 
 /* Contact Section */
@@ -328,12 +317,11 @@ nav {
 
 /* Contact Form */
 .contact-form {
-  /* Using gray-900 with opacity for form background */
-  background: rgba(31, 41, 55, 0.5);
+  /* Reverted to original form background */
+  background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
   border-radius: 8px;
-  /* Using gray-700 for border */
-  border: 1px solid rgba(209, 213, 219, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .form-group {
@@ -387,12 +375,11 @@ nav {
 
 /* Footer */
 footer {
-  /* Using gray-900 instead of pure black */
-  background: var(--gray-900);
+  /* Reverted to original black background */
+  background: var(--black);
   color: var(--white);
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid var(--gray-800);
 }
 
 footer p {
@@ -427,8 +414,8 @@ footer p {
   }
 
   .hero-logo {
-    /* Increased mobile logo size from 80px to 140px */
-    height: 140px;
+    /* Increased mobile logo size from 140px to 180px */
+    height: 180px;
   }
 
   .hero h1 {
